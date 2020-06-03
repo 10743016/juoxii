@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>科四二甲 10743016 朱欣怡</title>
+</head>
+<body>
+<div id="nav"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$("#nav").load("nav.html");
+</script>
+	<p>this is page8.</p>
+	<form method="get" action="">
+		<label for ="phone">your name:</label><br><br>
+		<input type="text" name="id" /><br><br>
+		<label for ="phone">your password:(8 digits)</label><br><br>
+		<input type="password" pattern="[a-zA-Z0-9]{8,}" /><br><br>
+		<label for ="phone">your phone number:</label><br><br>
+		<input type="tel" id="phone" name="phone" placeholder="0966-216128" pattern="[0-9]{4}-[0-9]{6}"/><br><br>
+		<textarea cols="50" rows="5" placeholder="">輸入你想要寫的內容...
+		</textarea>
+		
+        <from>
+		<p>Please select your Location:</p>
+		<select name="YourLocation"
+		<option value="aaa">科管系</option>
+		<option value="bbb">醫管系</option>
+		<option value="ccc">醫放系</option>
+		<option value="ddd">護理系</option>
+		<option value="eee">行管系</option>
+		</select><br><br>
+		</from>
+
+        <from>
+		現在再做什麼: <br>
+		<input type="radio" name="Location" value="male">睡覺<br>
+        <input type="radio" name="Location" value="female">吃飯<br>
+        <input type="radio" name="Location" value="other">玩手機<br><br>
+        </from>
+        
+      <form>
+      請勾選你的興趣: <br>
+     <input type="checkbox" value="Travel" name="Interest"> 旅遊<br>
+     <input type="checkbox" value="Movie" name="Interest"> 電影<br>
+    <input type="checkbox" value="Food" name="Interest"> 美食<br><br>
+    </form>
+		<input type="submit" value="送出表單"/><br><br>
+	</form>
+
+</body>
+</html>
